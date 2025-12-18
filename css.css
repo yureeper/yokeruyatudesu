@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  touch-action: manipulation;
+  font-family: sans-serif;
+}
+
+#game {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 200px;
+  background: white;
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+#dino {
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  background: #000;
+}
+
+#ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background: #000;
+}
+
+#cactus {
+  position: absolute;
+  right: -30px;
+  bottom: 20px;
+  width: 20px;
+  height: 40px;
+  background: #000;
+}
+
+#score {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 16px;
+}
+
+#gameover {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  display: none;
+}
